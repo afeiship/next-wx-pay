@@ -6,7 +6,7 @@
 
   var NxWxPay = nx.declare('nx.WxPay', {
     statics: {
-      pay: function(inOptions){
+      choose: function(inOptions){
         wx.ready(function () {
           return new Promise(function(resove, reject){
             wx.chooseWXPay(
